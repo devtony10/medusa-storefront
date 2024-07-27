@@ -2,7 +2,14 @@ import { Product } from "@medusajs/medusa"
 import { Metadata } from "next"
 
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
+import Magazine from "@modules/home/components/magazine"
+import Article from "@modules/home/components/article"
 import FeaturedProducts from "@modules/home/components/featured-products"
+import Infographic from "@modules/home/components/infographic"
+import Shop from "@modules/home/components/shop"
+import Banner from "@modules/home/components/banner"
+import Reviews from "@modules/home/components/reviews"
+import Rating from "@modules/home/components/rating"
 import Hero from "@modules/home/components/hero"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
@@ -69,11 +76,20 @@ export default async function Home({
   return (
     <>
       <Hero />
-      <div className="py-12">
-        <ul className="flex flex-col gap-x-6">
-          <FeaturedProducts collections={collections} region={region} />
-        </ul>
+      <div className="css-opq0ff exi01cl0">
+        <div className="css-lhjklq e1d54ml60">
+          <Rating />
+          <Reviews />
+        </div>
       </div>
+      <Banner />
+      <Shop />
+      <Infographic />
+      <ul className="flex flex-col gap-x-6">
+        <FeaturedProducts collections={collections} region={region} />
+      </ul>
+      <Article />
+      <Magazine />
     </>
   )
 }
