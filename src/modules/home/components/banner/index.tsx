@@ -7,7 +7,7 @@ const Banner = () => {
                         <div className="shopBanner_bodyCopy">
                             <h2 className="shopBanner_bodyCopy_title">Summer of color</h2>
                             <div className="shopBanner_bodyCopy_lead">
-                                Welcome to Summer of Color. We're celebrating Summer in a big way
+                                Welcome to Summer of Color. We&apos;re celebrating Summer in a big way
                                 with new colors monthly—in extremely limited quantities guaranteed
                                 to sell out. Stay tuned for you next favorite.
                             </div>
