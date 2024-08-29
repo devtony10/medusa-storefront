@@ -1,0 +1,111 @@
+.css-1yge21y {
+  background: linear-gradient(
+    41.11deg,
+    #f9e9e8 0%,
+    rgba(235, 243, 249, 0) 100%
+  );
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding-left: clamp(2.5rem, 1.667rem + 3.704vw, 5rem);
+  padding-right: clamp(2.5rem, 1.667rem + 3.704vw, 5rem);
+  padding-top: 5.33333rem;
+  padding-bottom: 5.33333rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  row-gap: 4.66667rem;
+  border-radius: 0.66667rem;
+}
+
+@media (min-width: 780px) {
+  .css-1yge21y {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 5.33333rem;
+    column-gap: 5.33333rem;
+    row-gap: 0;
+  }
+}
+
+.css-1yge21y .usp-card_icon {
+  margin-bottom: 1.33333rem;
+}
+
+.css-1yge21y .usp-card_title {
+  font-size: clamp(
+    1.33333rem,
+    calc(1.33333rem + (10) * ((100vw - 428px) / (1920 - 428))),
+    2rem
+  );
+  line-height: clamp(
+    2.13333rem,
+    calc(2.13333rem + (8) * ((100vw - 428px) / (1920 - 428))),
+    2.66667rem
+  );
+  margin-bottom: clamp(1.063rem, 0.902rem + 0.714vw, 1.25rem);
+  margin-top: 0;
+  font-weight: 700;
+  letter-spacing: -0.00133rem;
+  color: #153a5b;
+  text-align: center;
+}
+
+@media (min-width: 780px) {
+  .css-1yge21y .usp-card_title {
+    margin-bottom: 20px;
+  }
+}
+
+.css-1yge21y .usp-card_description {
+  font-size: 1.06667rem;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #153a5b;
+}
+.css-dvxtzn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.css-c8emzu {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-size: 3.2rem;
+}
+.css-82n8sf {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-size: inherit;
+}

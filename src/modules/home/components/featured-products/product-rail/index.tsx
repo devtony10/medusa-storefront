@@ -11,10 +11,10 @@ interface ProductRail {
   region: Region;
 }
 
-const fetchPricedProducts = async (products: ProductPreviewType[], region: Region) => {
-  return await Promise.all(
+const fetchPricedProducts = (products: ProductPreviewType[], region: Region) => {
+  return Promise.all(
     products.map(async (product) => {
-      const pricedProduct = await retrievePricedProductById({
+      const pricedProduct = retrievePricedProductById({
         id: product.id,
         regionId: region.id,
       });
@@ -33,28 +33,26 @@ export default async function ProductRail({ collection, region }: ProductRail) {
 
   const pricedProducts = await fetchPricedProducts(products, region);
 
-
   if (!pricedProducts) {
     return null
   }
 
   return (
-    <div className="flex flex-col px-[clamp(1.6rem,calc(1.6rem+(56)*((100vw-428px)/(1920-428))),5.33333rem)] my-[40px] bg-[#ffffff]
-        [@media(min-width:780px)]:mt-[80px] [@media(min-width:780px)]:mb-[80px]">
-      <div className="section-layout-heading flex justify-between">
-        <div className='section-layout-heading-text'>
-          <h1 className="section_title">{collection.title}</h1>
-        </div>
-        <InteractiveLink href={`/collections/${collection.handle}`}>
-          View all
-        </InteractiveLink>
+  <div className="css-1k4mxx6 exi01cl0">
+    <div className="section-layout-heading flex justify-between">
+      <div className='section-layout-heading-text'>
+        <h1 className="section_title">{collection.title}</h1>
       </div>
-
-      <div>
-        <section className="mx-[clamp(-5.33333rem,16.0643px-1.6rem-3.75335vw,-1.6rem)]">
-          <ProductSwiper pricedProducts={pricedProducts} region={region} />
-        </section>
-      </div>
+      <InteractiveLink href={`/collections/${collection.handle}`}>
+        View all
+      </InteractiveLink>
     </div>
+
+    <div>
+      <section className="css-20k3s6 ecovu060">
+        <ProductSwiper pricedProducts={pricedProducts} region={region} />
+      </section>
+    </div>
+  </div>
   )
 }

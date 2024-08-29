@@ -8,9 +8,9 @@
     "medusa-storefront"
   ],
   "scripts": {
-    "dev": "next dev -p 8000",
+    "dev": "next dev -p 8001",
     "build": "next build",
-    "start": "next start -p 8000",
+    "start": "next start -p 8001",
     "lint": "next lint",
     "analyze": "ANALYZE=true next build",
     "test-e2e": "playwright test e2e"
@@ -44,7 +44,8 @@
     "react-dom": "^18.2.0",
     "react-instantsearch-hooks-web": "^6.29.0",
     "react-intersection-observer": "^9.3.4",
-    "swiper": "^11.1.4",
+    "sass": "^1.77.8",
+    "swiper": "^11.1.9",
     "tailwindcss-radix": "^2.8.0",
     "webpack": "^5"
   },

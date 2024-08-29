@@ -1,6 +1,3 @@
-import { Github } from "@medusajs/icons"
-import { Button, Heading } from "@medusajs/ui"
-
 const Hero = () => {
   return (
     <section className="css-174ol2t e1gathm30">
